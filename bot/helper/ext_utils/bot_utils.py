@@ -122,7 +122,7 @@ def get_readable_message():
             if PAGE_NO > pages and pages != 0:
                 globals()['COUNT'] -= STATUS_LIMIT
                 globals()['PAGE_NO'] -= 1
-        msg += "═════〣DHRUV MIRROR 〣═════ \n"        
+        msg += "═════〣DHRUV MIRROR 〣═════ \n\n"        
         for index, download in enumerate(list(download_dict.values())[COUNT:], start=1):
             msg += f"<b>Name:</b> <code>{escape(str(download.name()))}</code>"
             
